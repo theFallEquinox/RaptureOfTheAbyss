@@ -6,5 +6,7 @@
 
   "block.raptureoftheabyss.mudstone": "Mudstone",
   "block.raptureoftheabyss.cobalt_ore": "Cobalt Ore",
-  "block.raptureoftheabyss.cobalt_block": "Cobalt Block"
+  "block.raptureoftheabyss.cobalt_block": "Cobalt Block",
+
+  "itemGroup.raptureoftheabysstab": "Rapture of the Abyss"
 }

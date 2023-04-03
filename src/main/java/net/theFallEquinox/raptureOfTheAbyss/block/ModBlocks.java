@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.theFallEquinox.raptureOfTheAbyss.RaptureOfTheAbyss;
+import net.theFallEquinox.raptureOfTheAbyss.item.ModCreativeModeTab;
 import net.theFallEquinox.raptureOfTheAbyss.item.ModItems;
 
 import java.util.function.Supplier;
@@ -22,16 +23,16 @@ public class ModBlocks {
     // ROCKS
     public static final RegistryObject<Block> MUDSTONE_BLOCK = registerBlock("mudstone",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.RAPTURE_ABYSS_TAB);
 
     // TUTORIAL
     public static final RegistryObject<Block> COBALT_BLOCK = registerBlock("cobalt_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.RAPTURE_ABYSS_TAB);
 
     public static final RegistryObject<Block> COBALT_ORE = registerBlock("cobalt_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.RAPTURE_ABYSS_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
